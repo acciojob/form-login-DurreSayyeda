@@ -1,11 +1,9 @@
 function getFormvalue() {
     //Write your code here
-let exicute=(event)=>
-	{
-		event.preventDefault();
-		alert(event.target.FirstName.value);
-		alert(event.target.LastName.value);
-		alert(event.target.LastName.value);
-		alert(event.target.PhoneNumber.value);
-		alert(event.target.EmailID.value)
+const firstName = document.forms["form1"]["fname"].value;
+    const lastName = document.forms["form1"]["lname"].value;
+    
+    alert(firstName + ' ' + lastName);
+
+    return false;
 }
